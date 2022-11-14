@@ -1,9 +1,11 @@
 <html>
 <head>
 <title>Test</title>
-<meta property="og:image" content="bh.png">
-<meta property="og:image:height" content="128000">
-<meta property="og:image:width" content="128000">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Trollface_non-free.png/220px-Trollface_non-free.png">
+<meta property="og:type" content="video.other">
+<meta property="og:video:url" content="">
+<meta property="og:video:height" content="128000">
+<meta property="og:video:width" content="128000">
 <script type="text/javascript">
   var imageURLs = [
        "bh.png"
@@ -22,6 +24,11 @@
 <body>
 <script type="text/javascript">
   document.write(getImageTag());
+  
+  
+  
+  document.querySelectorAll('meta[property=og\\:image]')[0].setAttribute('content', "bh.png")
+  
 </script>
 </body>
 </html>
