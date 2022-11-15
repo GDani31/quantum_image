@@ -8,7 +8,7 @@ import re
 # Configure the app
 app = web.application(('(.*)', 'Quantum'), globals())
 web.config.debug = False
-host = "10.0.0.4"
+host = "172.0.0.1"
 port = 8080
 
 # User-Agent for Tenor requests, it's nice to tell them who you are
